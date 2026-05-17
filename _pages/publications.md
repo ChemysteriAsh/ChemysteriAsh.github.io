@@ -11,13 +11,6 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-{% if site.scholar.group_by == 'year' %}
-  {% for y in page.years %}
-    <h2 class="year">{{ y }}</h2>
-    {% bibliography -q @*[year={{y}}]* %}
-  {% endfor %}
-{% else %}
-  {% bibliography %}
-{% endif %}
+{% bibliography %}
 
 </div>

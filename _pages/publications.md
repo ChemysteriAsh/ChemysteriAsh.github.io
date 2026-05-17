@@ -6,18 +6,10 @@ description: A collection of my research and publications.
 nav: true
 nav_order: 2
 ---
+
 <div class="publications">
-
-  <!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
 
 {% if site.scholar.group_by == 'year' %}
   {% for y in page.years %}

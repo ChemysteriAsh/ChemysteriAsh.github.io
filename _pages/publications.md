@@ -1,4 +1,3 @@
-
 ---
 layout: page
 permalink: /publications/
@@ -15,19 +14,5 @@ nav_order: 2
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
-
-{% if site.scholar.group_by == 'year' %}
-  {% for y in page.years %}
-    <h2 class="year">{{ y }}</h2>
-    {% bibliography -q @*[year={{y}}]* %}
-  {% endfor %}
-{% else %}
-  {% bibliography %}
-{% endif %}
 
 </div>

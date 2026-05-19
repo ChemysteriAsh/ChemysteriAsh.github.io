@@ -13,13 +13,11 @@
 
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0 text-center">
+    <div class="container mt-0 text-center" style="color: inherit; font-size: 1.1rem; font-weight: 500;">
       <div class="mb-2">
         <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fchemysteriash.github.io%2F&label=visitors&icon=emoji-smile-fill&color=%23cfe2ff&message=&style=for-the-badge&tz=UTC">
       </div>
-      <span style="color: var(--global-text-color); font-size: 1.1rem; font-weight: 500;">
-        {{ footer_contents }}
-      </span>
+      {{ footer_contents }}
     </div>
   </footer>
 {% else %}
@@ -28,13 +26,11 @@
       {% include newsletter.liquid %}
     {% endif %}
 
-    <div class="container text-center">
+    <div class="container text-center" style="color: inherit; font-size: 1.1rem; font-weight: 500;">
       <div class="mb-2">
         <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fchemysteriash.github.io%2F&label=visitors&icon=emoji-smile-fill&color=%23cfe2ff&message=&style=for-the-badge&tz=UTC">
       </div>
-      <span style="color: var(--global-text-color); font-size: 1.1rem; font-weight: 500;">
-        {{ footer_contents }}
-      </span>
+      {{ footer_contents }}
     </div>
   </footer>
 {% endif %}

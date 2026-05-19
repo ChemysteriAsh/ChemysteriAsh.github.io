@@ -33,3 +33,12 @@ footer.sticky-bottom {
     text-align: center;
   }
 }
+footer {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: var(--global-text-color) !important;
+}
+
+html[data-theme='dark'] footer {
+  color: var(--global-text-color) !important;
+}
